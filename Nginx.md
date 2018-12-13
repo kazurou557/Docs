@@ -2,7 +2,7 @@
 
 Sumarry
 
-Install Nginx using binary package in CentOS6.
+Install Nginx using binary package in CentOS7.
 
 ## Install Nginx
 
@@ -28,8 +28,11 @@ for a while, run command on root user.
 
 ## Operate Nginx
 
+In /usr/local/nginx/sbin/, run following command
+
+`./nginx` to start nginx server
 `nginx -s stop` to stop nginx  
-`nginx -s qui` to stop after response  
+`nginx -s quit` to stop after response  
 `nginx -s reopen` to reopen log file
 `nginx -s reload` to reload config file
 

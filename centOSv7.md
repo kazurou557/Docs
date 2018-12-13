@@ -4,9 +4,9 @@
 
 1. Install [VirtualBox][1]
 1. Install `Minimal ISO` from [CentOS v7][2]
-1. Create new VM in VirtualBox app installed
-1. Verify name, select `Linux` Type and select `RedHat(64-bit)` version
-1. Verify memory size, check `create a virual Hard Disk now`, check
+1. Create new VM in VirtualBox app 
+1. Decide name, select `Linux` Type and select `RedHat(64-bit)` version
+1. Decide memory size, check `create a virual Hard Disk now`, check
    `VDI` and check `Dynamically allocated`
 1. set storage size
 1. install CentOS 7 in next page
