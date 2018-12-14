@@ -1,27 +1,27 @@
 # Docker
 
-## How to install Docker for CentOS
+## <font color="Red">How to install Docker for CentOS</font>
 
 Installing docker needs CentOS v.7  
 Refer to [install Docker CE][1]
 
-## Linux Container(LXC)
+## <font color="Red">Linux Container(LXC)</font>
 
 Docker's idea is based on LXC.
 
-### Feature
+### <font color="orange">Feature</font>
 
 LXC is technology that separete each resources for OS to use. This technology don't simulate hardware like OS, so there is no overhead to virtulize. In addition to it, launching and stopping virtual machine is fast, because it does not have to boot and shutdown.
 
-### Detail
+### <font color="orange">Detail</font>
 
 LXC is realized by cgroups. it is mechanism for manage resources OS use. The way to manage is grouping resource, regulating priority and usable resources in each groups, and each groups are invisible.
 
-## Containerization
+## <font color="orange">Containerization</font>
 
 The use of LXC to deploy application is called contanarization.
 
-### containers feature (that is, LXC's feature)
+### <font color="orange">containers feature (that is, LXC's feature)</font>
 
 1. Even the most complex applications can be containerized
 1. Containers leverage and share host kernel
@@ -29,7 +29,7 @@ The use of LXC to deploy application is called contanarization.
 1. build locally, deploy to the cloud, and run anywhere
 1. Containerization can increase and automatically destribute container replicas
 
-### images and containers
+### <font color="orange">images and containers</font>
 
 A container is launched by running an image. An image is an executable package that includes everything to run an application.
 

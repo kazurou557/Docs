@@ -1,6 +1,6 @@
 # How to Install and use centOS v7
 
-## How to setup CentOS v7 in VirtualBox
+## <font color="red">How to setup CentOS v7 in VirtualBox</font>
 
 1. Install [VirtualBox][1]
 1. Install `Minimal ISO` from [CentOS v7][2]

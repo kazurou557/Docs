@@ -1,10 +1,6 @@
-# How to install Nginx
+# Nginx
 
-Sumarry
-
-Install Nginx using binary package in CentOS7.
-
-## Install Nginx
+## <font color="Red">Install Nginx</font>
 
 Start CentOS using Oracle VM VirtualBox Manager.
 
@@ -26,7 +22,7 @@ for a while, run command on root user.
 1. Run `sudo make`
 1. Run `sudo make install`
 
-## Operate Nginx
+## <font color="Red">Operate Nginx</font>
 
 In /usr/local/nginx/sbin/, run following command
 
@@ -36,7 +32,7 @@ In /usr/local/nginx/sbin/, run following command
 `nginx -s reopen` to reopen log file
 `nginx -s reload` to reload config file
 
-## setup port for nginx
+## <font color="Red">setup port for nginx</font>
 
 setup firewall in VM
 
@@ -103,9 +99,9 @@ COMMIT
 1. Run `systemctl start iptables`
 1. Run `systemcrl status iptables`
 
-## Deal with error
+## <font color="Red">Deal with error</font>
 
-### nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)
+### <font color="orange">ErrorCode nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use) </font>
 
 examine port status using lsof command
 

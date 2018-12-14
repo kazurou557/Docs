@@ -2,7 +2,7 @@
 
 Vagrant is manage tool for virtualbox
 
-## How to install and initialize Vagrant box
+## <font color="Red"> How to install and initialize Vagrant box </font>
 
 Vagrant box is image file for VM.
 
@@ -10,10 +10,10 @@ Vagrant box is image file for VM.
    Search url from [Vagrant][1]
 1. Run `vagrant init {VM name}
 1. Run `vagrant up` to start vagrant VM
-   ID:   vagrant
+   ID: vagrant
    pass: vagrant
 
-## How to write Vagrant box
+## <font color="Red"> How to write Vagrant box </font>
 
 ```bash
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
@@ -32,20 +32,19 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 end
 ```
 
-## How to share file between Host and VM
+## <font color="Red"> How to share file between Host and VM </font>
 
-1. add below content in box file
-   file name is thing to want to share
+add below content in box file
+file name is thing to want to share
 
 ```bash
     config.vm.synced_folder "../{file name}", "/var/www/html/{file name}"
 ```
 
-1. Run `vagrant reload` to load box file content
+Run `vagrant reload` to load box file content
 
-## How to ssh VM
-
+## <font color="Red"> How to ssh connection to VM</font>
 The ssh in vagrant is easy  
 Just run `vagrant ssh`
 
-[1]:http://www.vagrantbox.es/
+[1]: http://www.vagrantbox.es/
