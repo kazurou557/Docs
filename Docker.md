@@ -5,7 +5,7 @@
 Installing docker needs CentOS v.7  
 Refer to [install Docker CE][1]
 
-## <font color="Red">Linux Container(LXC)</font>
+## <font color="Red">About Linux Container(LXC)</font>
 
 Docker's idea is based on LXC.
 
@@ -17,7 +17,7 @@ LXC is technology that separete each resources for OS to use. This technology do
 
 LXC is realized by cgroups. it is mechanism for manage resources OS use. The way to manage is grouping resource, regulating priority and usable resources in each groups, and each groups are invisible.
 
-## <font color="orange">Containerization</font>
+## <font color="red">Containerization</font>
 
 The use of LXC to deploy application is called contanarization.
 
@@ -34,5 +34,12 @@ The use of LXC to deploy application is called contanarization.
 A container is launched by running an image. An image is an executable package that includes everything to run an application.
 
 A container is a runtime instance of an image.
+
+## <font color="red">Deal With Error</font>
+
+### <font color="orange">ErrorCode: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?</font>
+
+1. Run `sudo system docker status` to check active/inactive
+1. Run `service docker start` in any case
 
 [1]:https://docs.docker.com/install/linux/docker-ce/centos/#docker-ee-customers

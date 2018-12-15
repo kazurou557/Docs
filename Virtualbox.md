@@ -6,7 +6,7 @@
 
 `ping` command succeed from gestOS to hostOS, but fail in reverse case.  
 this disconnection is default specification.  
-below procedure can do above process.  
+After doing below procedure, you can do above process.  
 this procedure adopt that replace access to host(inclucding port) with access to VM(including port)
 
 1. Open VM settings
@@ -15,11 +15,11 @@ this procedure adopt that replace access to host(inclucding port) with access to
 1. Click `port forwarding`
 1. Verify `protcol`
 1. Write `Host IP` corresponding to host IP address
-1. Verify temporary host port in `Host Port`
+1. Write temporary host port in `Host Port`
 1. Write `Guest IP` corresponding to guest IP address
-1. Verify real guest port
+1. Write real guest port
 1. Run `Test-NetConnection -ComputerName {Host IP} -Port {Host Port}`
-   to check above process succeed
+   to check above process succeed from hostOS
 
 ## <font color="Red">How to ssh connection to VM using Teraterm</font>
 
@@ -28,6 +28,7 @@ this procedure adopt that replace access to host(inclucding port) with access to
 1. do below procedure on root user
 1. install package  
 1. configure firewall
+1. configure virtualbox settings about network
 
 ### <font color="orange"> server side</font>
 
@@ -36,7 +37,7 @@ this procedure adopt that replace access to host(inclucding port) with access to
 1. Commentout `Port`, set `PermitRootLogin` no, set `PasswordAuthentication` yes
 1. Run `systemctl start sshd.service` and `systemctl status sshd.service`
 1. Run `firewall-cmd --list-all` to check port for ssh is open
-1. if ssh don't exist in services, Run `firewall-cmd --permanent --add-service=ssh`
+1. if `ssh` don't exist in services, Run `firewall-cmd --permanent --add-service=ssh`
 1. Run `useradd {usernamme}`, `passwd {username}` and decide password
 
 ### <font color="orange"> client side</font>
@@ -45,7 +46,7 @@ this procedure adopt that replace access to host(inclucding port) with access to
 1. ssh {username}@{server's IP address}
 1. if [{username}@localhost], preparation finish
 
-### <font color="orange">How to set up Firewall (In my case, ESET's firewall )</font>
+### <font color="orange">set up Firewall (In my case, ESET's firewall )</font>
 
 1. open firewall setup page
 1. decide name, check `双方向`, check TCP/UDP

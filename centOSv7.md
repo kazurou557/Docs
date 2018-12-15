@@ -16,5 +16,29 @@
 1. create root and user
 1. finally click `再起動` and login
 
+## <font color="red">Structure of root directory </font>
+
+[detail][3]
+| directory | content                  |
+|-----------|--------------------------|
+| bin       | バイナリコマンド群                |
+| boot      | ブートローダ用のファイル群            |
+| dev       | デバイスドライバ用ファイル群           |
+| etc       | システム、OS、デーモンなどの設定ファイル群   |
+| home      | ユーザのホームディレクトリ（ワークスペース）   |
+| lib       | bin/sbinのコマンド実行に必要なファイル群 |
+| media     | 取り換え可能メディア用のマウントポイント     |
+| mnt       | ファイルシステムを一時的にマウントするポイント  |
+| proc      | システム情報を含む仮想ディレクトリ（）      |
+| root      | ルートユーザのホームディレクトリ         |
+| sbin      | システムコマンド群                |
+| sys       | システム情報を含む仮想ディレクトリ（カーネル）  |
+| tmp       | 一時ファイル用                  |
+| usr       | プログラムなどを置く場所             |
+| var       | 値が常に変動するデータを置く場所         |
+| srv       | FTPやwwwなのでデータファイルの置き場所   |
+| opt       | 追加アプリケーション用              |
+
 [1]: https://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html?ssSourceSiteId=otnjp
 [2]: https://www.centos.org/download/
+[3]: http://mrs.suzu841.com/tebiki/linux/centos/directory/

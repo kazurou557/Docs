@@ -9,9 +9,11 @@ Vagrant box is image file for VM.
 1. Run `vagrant box add {VM name} {url}`  
    Search url from [Vagrant][1]
 1. Run `vagrant init {VM name}
-1. Run `vagrant up` to start vagrant VM
-   ID: vagrant
-   pass: vagrant
+
+## <font color="red"> How to start vagrant VM</font>
+ 1. Run `vagrant up` to start vagrant VM  <br>
+    start VM on virtualbox
+ 1. Input `ID: vagrant, pass: vagrant`
 
 ## <font color="Red"> How to write Vagrant box </font>
 
